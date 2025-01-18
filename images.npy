@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Greatlearning login </title>
+  <link rel="icon" href="https://d9jmtjs5r4cgq.cloudfront.net/images/branding/favicon-v1-2.ico" type="image/x-icon">
+  <!-- Bootstrap -->
+  <link href="/css/vendor/main/bootstrap.min.css" rel="stylesheet">
+  <link href="/gl/css/style.css?v=4" rel="stylesheet">
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="8fcxK8iHqXLJ45oRWvGJsjJ1f2xps3MhNx7L472ibbucsFJestDOE4Gl7kgglcbGdCIHOyT6ShABdoOz79FVjA==" />
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="main">
+    <div class="login-wrap" id="loginWrap">
+      <input type="hidden" id="sebQuitApiUrl" value="https://elevate.greatlearning.in/api/v1/seb/quit" >
+      <div class="login-container">
+        <div class="row row-eq-height">
+          <div class="col-sm-12 ">
+            <div class="login-form-wrapper">
+              <div class="login-form-container">
+                <div class="text-center">
+                  <img src="https://d9jmtjs5r4cgq.cloudfront.net/images/branding/greatlearning-brand-v1-2.svg" class="band-img"/>
+                </div>
+                <form id="login_form" style="display: block;" action="/login" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="N12XeP23Bff4rMUHMb0LGprNSsdZEhki7uAM8PN6voxaGvQNh+BilrDqsV5L2URu3JoykBRbIBPYiESgoQmGuw==" />
+
+                    <h3 class="text-center title">Olympus Login</h3>
+
+                    <div class="alert alert-error">You must be logged in to access this page</div>
+                            <script src="https://www.google.com/recaptcha/api.js?render=6LdpfU0bAAAAAEwXOab0sR1BiVsp-dACm7DTnt40"></script>
+        <input type="hidden" id="recaptcha_token_olympus_login" name="g-recaptcha-response-data[olympus_login]">
+        <div type="hidden" id="sitekey_olympus_login" data-value="6LdpfU0bAAAAAEwXOab0sR1BiVsp-dACm7DTnt40"></div>
+
+                    <input type="hidden" id="pseudonymSessionEmail" name="pseudonym_session[email]" value="true">
+                  <div class="form-group" id="loginGroup">
+                    <label class="label-control" for="email">Email Address</label>
+                    <input type="text" class="form-control" name="pseudonym_session[unique_id]" id="login" value="">
+                    <label id="loginErrorLabel" class="label-control" for="email"></label>
+                  </div>
+
+                    <div class="form-group" id="passwordGroup">
+                      <label class="label-control" for="password">Password</label>
+                      <input type="password" id="password" class="form-control" name="pseudonym_session[password]"  autocomplete="off">
+                      <span toggle="#password" class="field-icon toggle-password" style="float: right;margin-left: -25px;margin-top: -36px;position: relative;z-index: 2;margin-right: 15px;">
+                      <img id="visibilityOn" src="https://d9jmtjs5r4cgq.cloudfront.net/images/branding/visibility-on.svg"/>
+                      <img id="visibilityOff" src="https://d9jmtjs5r4cgq.cloudfront.net/images/branding/visibility_off-24px.svg" style="display: none;"/>
+                    </span>
+                      <label id="passwordErrorLabel" class="label-control" for="email"></label>
+                    </div>
+
+                    <label class="custom-checkmark" style="display: none;">Stay signed in
+                      <input type="checkbox" checked="checked" name="pseudonym_session[remember_me]" value="1">
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <div class="flex alternate-link ">
+                      <div>
+                        <a href="#" id="forgotPasswordLink">Forgot password?</a>
+                      </div>
+                      <div>
+                          <button class="btn login-btn" data-action="olympus_login" id="reCaptchaLoginSubmitButton">Login</button>
+                      </div>
+                    </div>
+                      <div class="text-center line-wrapper">
+                        <div class="gray-line"></div>
+                        <div class="line-text">Or</div>
+                        <div class="gray-line"></div>
+                      </div>
+
+                      <a href="https://olympus.mygreatlearning.com/login/google" id="continue-with-google" class="btn continue-with-google-button">
+                        <div class="google-button-image-container">
+                          <img src="/images/login/google-icon.svg" />
+                        </div>
+                        <div class="google-button-text-container">
+                            Continue with google
+                        </div>
+                      </a>
+</form>                <form id="forgot_password_form" style="display: none;" action="/forgot_password" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="CAi+CeLI1ld3Rw1mrR54PEhXBl9dvBXaqijAvqWZ/gllT918mJ+xNj8BeT/XejdIDgB+CBD1LOucQIju9+rGPg==" />
+                  <div>
+                    <h3 class="text-center title">Reset Password</h3>
+
+
+                    <p>Please enter your registered email address and we will email you a reset password link.</p>
+                  </div>
+
+                  <div class="form-group forgot-pass-input" id="forgotGroup">
+                    <label class="label-control" for="email">Email Address</label>
+                    <input type="text" id="email" class="form-control" name="pseudonym_session[unique_id_forgot]">
+                    <label id="forgotErrorLabel" class="label-control" for="email"></label>
+                  </div>
+                  <div class="flex alternate-link">
+                    <div>
+                      <a href="#" id="backToLoginLink">Back to Login</a>
+                    </div>
+                    <div>
+                      <button class="btn login-btn" id="requestPassword" type="submit">Send reset link</button>
+                    </div>
+                  </div>
+</form>              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="/javascripts/vendor/main/jquery-3.7.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/javascripts/vendor/main/bootstrap.min.js"></script>
+<script src="/gl/js/login.js?v=2.3"></script>
+
+</body>
+</html>
